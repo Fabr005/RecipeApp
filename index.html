@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="src/style.css">
+  <script src="https://kit.fontawesome.com/254d9447b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class = "container">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+        <h2 class = "title">Find Recipe Ingredients</h2>
+        <blockquote>“A recipe has no soul. You, as the cook, must bring soul to the recipe.”<br>
+          <cite>- Thomas Keller</cite>
+        </blockquote>
+        <div class = "meal-search-box">
+          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <div class = "meal-result">
+        <h2 class = "title">Your Search Results:</h2>
+        <div id= "meal" class="meal notFound">
+        </div>
+      </div>
+      <div class = "meal-details">
+        <!-- recipe close btn -->
+        <button class = "btn recipe-close-btn" id = "recipe-close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+        <!-- meal content -->
+        <div class = "meal-details-content">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="src/script.js"></script>
+</body>
+</html>
